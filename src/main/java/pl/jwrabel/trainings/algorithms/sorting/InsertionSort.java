@@ -21,6 +21,9 @@ public class InsertionSort implements SortingAlgorithm {
 //
 //        }
 
+        // wstawienie wartości 10 do listy pod indeksem 3
+//        list.add(3, 10);
+
         for (int elem : data) {
 
             // wstawianie do listy
