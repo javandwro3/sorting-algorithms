@@ -7,7 +7,24 @@ import java.util.Arrays;
  */
 public class BubbleSort implements SortingAlgorithm {
     public int[] sort(int[] data) {
-        Arrays.sort(data);
+        int counter = 0;
+        while (counter < data.length) {
+
+            // pojedyncze przejście
+            for (int i = 0; i < data.length - 1; i++) {
+
+                if (data[i] > data[i + 1]) {
+                    // zamiania miejscami dwóch elementów
+                    int tmp = data[i];
+                    data[i] = data[i + 1];
+                    data[i + 1] = tmp;
+                }
+
+            }
+            counter++;
+
+        }
+
         return data;
     }
 
