@@ -23,10 +23,21 @@ public class InsertionSort implements SortingAlgorithm {
 //      wstawienie wartości 10 do listy pod indeksem 3
 //      list.add(3, 10);
 
-        for (int elem : data) {
+        for (int toInsert : data) {
 
-            // wstawianie do listy
-            // w poprawnej kolejności
+            boolean found = false;
+
+            for (int i = 0; i < list.size(); i++) {
+                if(list.get(i) > toInsert){
+                    list.add(i, toInsert);
+                    found = true;
+                    break;
+                }
+            }
+
+            if(!found){
+                list.add(toInsert);
+            }
 
         }
 
